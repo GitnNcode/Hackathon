@@ -1,0 +1,59 @@
+/* Main container to split screen */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+}
+
+/* Left half of the screen */
+.left-half {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two equal rows */
+}
+
+/* Top section of the left half */
+.top-section {
+    background-color: #896BFF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Bottom section of the left half */
+.bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Leaderboard image styling */
+.leaderboard-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Right half of the screen */
+.right-half {
+    padding: 20px;
+    background-color: #2C2C2C; /* Light background for contrast */
+    overflow-y: auto; /* Enable scrolling if the content overflows */
+}
+
+/* List of video lessons */
+.video-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.video-list li {
+    background-color: #896BFF; /* Light gray background for items */
+    margin: 5px 0; /* Space between items */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
